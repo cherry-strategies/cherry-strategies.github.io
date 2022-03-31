@@ -5,29 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cherry Strategies</title>
-    <meta name="description" content="The website of Cherry Strategies." />
-
+    <meta
+      name="description"
+      content="Cherry Strategies provides strategic planning, project management, and philanthropic advising services."
+    />
     <link rel="icon" href="./public/img/favicon.ico" sizes="any" />
     <link rel="icon" href="./public/img/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./public/img/apple-touch-icon.png" />
-
     <link rel="stylesheet" href="./public/style.css" />
   </head>
   <body>
     <a href="#content" hidden aria-hidden="false">Skip to content</a>
-
-    <div class="container stack">
-      <header role="banner">
-        <h1>Cherry Strategies</h1>
+    <div class="stack">
+      <header class="[ cover stack ] [ justify-between shade ]" role="banner">
+        <h1 class="text-center">Cherry Strategies</h1>
+        <nav class="pad-01" role="navigation">
+          <ul class="[ nav ] [ container ]" role="list">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-      <main id="content" role="main">
-        <section id="about">
-          <h2>About</h2>
-          <p>Coming soon!</p>
+      <main id="content" class="container stack" role="main">
+        <section id="about" class="stack">
+          <h2 class="text-center">About</h2>
+          <img
+            src="./public/img/uploads/bridget.jpg"
+            class="left square"
+            width="300"
+            height="300"
+            decoding="async"
+            loading="lazy"
+          />
+          <p>
+            Bridget K. Cherry&rsquo;s work has spanned nonprofits, federal and
+            local government, and philanthropy. Bridget previously served as a
+            Program Officer on the Walton Family Foundation&rsquo;s Education
+            team. She served as special assistant for policy for the DC Office
+            of the State Superintendent of Education. Bridget has held positions
+            at City Year, Inc. and the US Department of Education, where she was
+            a presidential management fellow and served as a program officer for
+            the Race to the Top program. She also served as an Education
+            Pioneers fellow in Washington, DC. Bridget started her career in
+            education as a middle school teacher in Cofradía, Honduras. She
+            received her Bachelor of Arts in English from Yale University and
+            her Master in Public Affairs from Princeton University&rsquo;s
+            School of Public and International Affairs.
+          </p>
+        </section>
+        <section id="services" class="stack">
+          <h2 class="text-center">Services</h2>
+          <p>
+            Cherry Strategies provides strategic planning, project management,
+            and philanthropic advising services. We can support you in bringing
+            a new idea to life, help you scale what works, and ask the right
+            questions along the way to make sure you are on track to meet your
+            goals.
+          </p>
         </section>
       </main>
-      <footer role="contentinfo">
-        <p>The website of Cherry Strategies.</p>
+      <footer
+        id="contact"
+        class="[ cover ] [ justify-center shade ]"
+        role="contentinfo"
+      >
+        <div class="container stack">
+          <h2 class="text-center">Contact</h2>
+          <dl>
+            <dt class="inline-block">Email:</dt>
+            <dd class="inline-block">
+              <a href="mailto:bridget@cherrystrategies.com"
+                >bridget@cherrystrategies.com</a
+              >
+            </dd>
+          </dl>
+        </div>
       </footer>
     </div>
   </body>
