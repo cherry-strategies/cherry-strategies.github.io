@@ -141,14 +141,6 @@ img {
 }
 
 /**
- * Display
- */
-
-.inline-block {
-  display: inline-block;
-}
-
-/**
  * Flexbox
  */
 
@@ -176,6 +168,28 @@ img {
 /* ----------------------------------- *\
   #BLOCKS
 \* ----------------------------------- */
+
+/**
+ * Contact
+ */
+
+.contact {
+  column-gap: 0.75em;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+.contact-label {
+  text-align: right;
+}
+
+.contact-label::after {
+  content: ":";
+}
+
+.contact-item {
+  grid-column-start: 2;
+}
 
 /**
  * Nav
