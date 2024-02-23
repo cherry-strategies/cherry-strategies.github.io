@@ -183,6 +183,17 @@ img {
   text-align: center;
 }
 
+.float-end {
+  float: right;
+  margin-left: 0.75em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /**
  * Colors
  */
@@ -283,9 +294,6 @@ img {
 
 .site-content img {
   max-width: 50%;
-  float: right;
-  clear: both;
-  margin-left: 0.75em;
 }
 
 /**
