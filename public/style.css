@@ -256,10 +256,12 @@ img {
   margin-right: auto;
 }
 
+/*
 .site-content ol,
 .site-content ul {
   padding-left: 0;
 }
+*/
 
 .site-content img {
   max-width: 50%;
