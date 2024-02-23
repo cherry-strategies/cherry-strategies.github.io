@@ -59,14 +59,6 @@ h1 {
   font-size: clamp(2rem, 0.948rem + 5.260000000000001vw, 3.052rem);
 }
 
-h2 {
-  font-size: 1.563em;
-}
-
-h3 {
-  font-size: 1.25em;
-}
-
 /**
  * Grouping
  */
@@ -215,6 +207,18 @@ img {
 .pad-block-0 {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+/**
+ * Sizing
+ */
+
+.scale-1 {
+  font-size: 1.25em;
+}
+
+.scale-2 {
+  font-size: 1.563em;
 }
 
 /**
