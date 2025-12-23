@@ -1,0 +1,33 @@
+---
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="icon" href="/img/favicon.ico" sizes="any" />
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+<link rel="canonical" href={canonicalURL} />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link
+  rel="preload"
+  href="/fonts/dolce_vita_heavy_bold-webfont.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link rel="stylesheet" href="/style.css" />
+
+<ClientRouter />

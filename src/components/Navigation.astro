@@ -1,0 +1,14 @@
+---
+const links = [
+  { href: "#about", text: "About" },
+  { href: "#services", text: "Services" },
+  { href: "#experience", text: "Experience" },
+  { href: "#connect", text: "Connect" },
+];
+---
+
+<nav role="navigation">
+  <ul class="cluster" role="list">
+    {links.map(({ href, text }) => <a href={href}>{text}</a>)}
+  </ul>
+</nav>
