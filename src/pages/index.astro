@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import client from "../../tina/__generated__/client";
+import Page from "../../tina/pages/Page.tsx";
+
+const data = await client.queries.page({ relativePath: "home.mdx" });
+---
+
+<BaseLayout
+  title={data.data.page.title}
+  description={data.data.page.description}
+>
+  <Page {...data} client:tina />
+</BaseLayout>

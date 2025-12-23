@@ -87,6 +87,10 @@ dd {
   grid-column-start: 2;
 }
 
+p:has(> img:only-child) {
+  max-width: unset;
+}
+
 /**
  * Text
  */
@@ -224,10 +228,12 @@ img {
  * Sizing
  */
 
+h3,
 .scale-1 {
   font-size: 1.25em;
 }
 
+h2,
 .scale-2 {
   font-size: 1.563em;
 }

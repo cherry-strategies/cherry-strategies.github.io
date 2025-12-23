@@ -1,6 +1,8 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
+import react from "@astrojs/react";
+import tinaDirective from "./astro-tina-directive/register";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,5 +10,5 @@ export default defineConfig({
   server: {
     host: true,
   },
-  integrations: [mdx()],
+  integrations: [mdx(), react(), tinaDirective()],
 });

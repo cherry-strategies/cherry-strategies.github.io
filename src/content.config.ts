@@ -1,12 +1,32 @@
-import { defineCollection } from "astro:content";
-import { glob } from "astro/loaders";
-import { z } from "astro/zod";
+import { defineCollection, z } from "astro:content";
+import client from "../tina/__generated__/client";
 
 const page = defineCollection({
-  loader: glob({ pattern: "**/*.mdx", base: "./src/content/page" }),
+  loader: async () => {
+    const postsResponse = await client.queries.pageConnection();
+
+    // Map Tina posts to the correct format for Astro
+    return postsResponse.data.pageConnection.edges
+      ?.filter((p) => !!p)
+      .map((p) => {
+        const node = p?.node;
+
+        return {
+          ...node,
+          id: node?._sys.relativePath.replace(/\.mdx?$/, ""), // Generate clean URLs
+          tinaInfo: node?._sys, // Include Tina system info if needed
+        };
+      });
+  },
   schema: z.object({
+    tinaInfo: z.object({
+      filename: z.string(),
+      basename: z.string(),
+      path: z.string(),
+      relativePath: z.string(),
+    }),
     title: z.string(),
-    description: z.string(),
+    body: z.any(),
   }),
 });
 export const collections = { page };

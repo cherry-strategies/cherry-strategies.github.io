@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
     <a href="#content" hidden aria-hidden="false">Skip to content</a>
     <div class="stack">
       <Header title={title} />
-      <main id="content" class="[ site-content ] [ stack ]" role="main">
+      <main id="content" class="[ site-content ] [ container ]" role="main">
         <slot />
       </main>
       <Footer />
