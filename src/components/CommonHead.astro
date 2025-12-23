@@ -1,0 +1,14 @@
+---
+const { title, description } = Astro.props;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="icon" href="/img/favicon.ico" sizes="any" />
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="stylesheet" href="/style.css" />

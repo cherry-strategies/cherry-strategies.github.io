@@ -1,0 +1,19 @@
+---
+import Logo from "./Logo.astro";
+import Navigation from "./Navigation.astro";
+
+const { title } = Astro.props;
+---
+
+<header class="[ site-head ] [ paper-primary ]" role="banner">
+  <div class="[ container stack ] [ pad-block-0 ]">
+    <hgroup class="text-center">
+      <h1 class="font-display">
+        <Logo />
+        {title}
+      </h1>
+      <p class="scale-1"><em>Strategy to drive impact</em></p>
+    </hgroup>
+    <Navigation />
+  </div>
+</header>
