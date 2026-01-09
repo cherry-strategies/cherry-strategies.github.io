@@ -1,25 +1,21 @@
 ---
-
+import config from "../content/config/config.json";
 ---
 
 <footer id="connect" class="[ site-foot ] [ paper-neutral ]" role="contentinfo">
   <div class="[ container stack ] [ pad-block-0 ]">
     <h2 class="font-display scale-2 text-center">Connect</h2>
     <dl>
-      <dt>Email</dt>
-      <dd>
-        <a href="mailto:bridget@cherrystrategies.com"
-          >bridget<wbr />@<wbr />cherrystrategies<wbr />.com</a
-        >
-      </dd>
-      <dt>LinkedIn</dt>
-      <dd>
-        <a href="https://www.linkedin.com/in/bridgetkcherry/">bridgetkcherry</a>
-      </dd>
-      <dt>Substack</dt>
-      <dd>
-        <a href="https://educationdispatch.substack.com/">Education Dispatch</a>
-      </dd>
+      {
+        config.connect.map(({ platform, title, url }) => (
+          <>
+            <dt>{platform}</dt>
+            <dd>
+              <a href={url}>{title}</a>
+            </dd>
+          </>
+        ))
+      }
     </dl>
   </div>
 </footer>

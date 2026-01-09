@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import GlobalConfigCollection from "./collections/global-config";
 import PageCollection from "./collections/page";
 
 // Your hosting provider likely exposes this as an environment variable
@@ -28,7 +29,7 @@ export default defineConfig({
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
   schema: {
-    collections: [PageCollection],
+    collections: [GlobalConfigCollection, PageCollection],
   },
   search: {
     tina: {

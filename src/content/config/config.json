@@ -1,0 +1,41 @@
+{
+  "site": {
+    "title": "Cherry Strategies",
+    "description": "Cherry Strategies provides strategic planning, project management, and philanthropic advising services."
+  },
+  "menu": [
+    {
+      "title": "About",
+      "url": "#about"
+    },
+    {
+      "title": "Services",
+      "url": "#services"
+    },
+    {
+      "title": "Experience",
+      "url": "#experience"
+    },
+    {
+      "title": "Connect",
+      "url": "#connect"
+    }
+  ],
+  "connect": [
+    {
+      "platform": "Email",
+      "url": "mailto:bridget@cherrystrategies.com",
+      "title": "bridget@cherrystrategies.com"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/bridgetkcherry/",
+      "title": "bridgetkcherry"
+    },
+    {
+      "platform": "Substack",
+      "url": "https://educationdispatch.substack.com/",
+      "title": "Education Dispatch"
+    }
+  ]
+}

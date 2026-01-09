@@ -21,7 +21,6 @@ const PageCollection: Collection = {
       type: "string",
       name: "description",
       label: "Description",
-      required: true,
     },
     {
       type: "rich-text",

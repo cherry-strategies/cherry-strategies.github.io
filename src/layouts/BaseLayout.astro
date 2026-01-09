@@ -2,6 +2,7 @@
 import CommonHead from "../components/CommonHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import config from "../content/config/config.json";
 
 const { title, description } = Astro.props;
 ---
@@ -14,7 +15,7 @@ const { title, description } = Astro.props;
   <body class="font-text">
     <a href="#content" hidden aria-hidden="false">Skip to content</a>
     <div class="stack">
-      <Header title={title} />
+      <Header title={config.site.title} />
       <main id="content" class="[ site-content ] [ container ]" role="main">
         <slot />
       </main>
