@@ -1,14 +1,9 @@
 ---
-const links = [
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#experience", text: "Experience" },
-  { href: "#connect", text: "Connect" },
-];
+import config from "../content/config/config.json";
 ---
 
 <nav role="navigation">
   <ul class="cluster" role="list">
-    {links.map(({ href, text }) => <a href={href}>{text}</a>)}
+    {config.menu.map(({ title, url }) => <a href={url}>{title}</a>)}
   </ul>
 </nav>

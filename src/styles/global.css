@@ -309,3 +309,7 @@ h2,
 .site-foot .container {
   max-width: max-content;
 }
+
+.site-foot a {
+  overflow-wrap: anywhere;
+}
