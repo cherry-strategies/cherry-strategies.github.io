@@ -6,6 +6,8 @@ const Image = (props: any) => {
       src={props.url}
       alt={props.alt}
       className="float-end"
+      width="320"
+      height="480"
       loading="lazy"
       decoding="async"
     />
